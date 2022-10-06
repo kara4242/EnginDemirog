@@ -40,6 +40,9 @@ public int getId() {
 public void setId(int id) {
 	this.id = id;
 }
+public Customer() {
+	
+}
 public String getFirstName() {
 	return firstName;
 }
@@ -61,10 +64,15 @@ public void setNationalIdentity(String nationalIdentity) {
 }
 	
 class CustomerManager{
-	
+	private Customer cs;
+	public CustomerManager(Customer cs)
+	{
+		this.cs=cs;
+		
+	}
 	public void Save(Customer customer)
 	{
-		System.out.println("Müsteri kayıt edildi");
+		System.out.println("Müsteri kayıt edildi"+cs.getFirstName());
 		
 	}
 }
