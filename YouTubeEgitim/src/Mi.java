@@ -1,16 +1,10 @@
 
 public class Mi implements ICreditManager {
 
-	@Override
-	public void calculate() {
-		// TODO Auto-generated method stub
-		
-	}
+	    public void calculate() {
+	        System.out.println("Military credit calculated");
+	    }
 
-	@Override
-	public void save() {
-		// TODO Auto-generated method stub
 		
-	}
 
 }

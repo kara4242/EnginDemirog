@@ -1,16 +1,12 @@
 
 public class Teac implements ICreditManager {
 
-	@Override
-	public void calculate() {
-		// TODO Auto-generated method stub
-		
-	}
+	 @Override
+	    public void calculate() {
+	        // calculate
+	        System.out.println("Teacher credit calculated");
+	    }
 
-	@Override
-	public void save() {
-		// TODO Auto-generated method stub
-		
-	}
+	
 
 }
