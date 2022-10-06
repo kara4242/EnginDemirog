@@ -18,7 +18,7 @@ public class Main {
 		customerManager.save();
 		customerManager.delete();
 		
-		Company company = new Company();
+		Company company = new Company();sad
 		company.setTaxNumber("123456789");
 		company.setCompanyName("Company Name");
 		company.setId(100);
