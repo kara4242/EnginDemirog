@@ -9,6 +9,10 @@ public class Main1 {
 		sayi2=100;
 		System.out.println(sayi1);
 		
+		int[] say1=new int[] {1,2,3};
+		int[] say2=new int[] {10,20,30};
+		say2[0]=1000;
+		System.out.println(say1[0]);
 
 	}
 
