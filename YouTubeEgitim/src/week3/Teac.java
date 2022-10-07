@@ -1,5 +1,6 @@
+package week3;
 
-public class Teac implements ICreditManager {
+public class Teac extends BaseCardManager {
 
 	 @Override
 	    public void calculate() {
