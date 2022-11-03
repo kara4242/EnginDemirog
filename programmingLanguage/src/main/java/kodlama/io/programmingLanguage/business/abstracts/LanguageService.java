@@ -12,7 +12,7 @@ public interface LanguageService {
 	
 	public List<GetAllLanguageResponse> getAll();
 	public void add(CreateLanguageRequest languageRequest);
-	public Language getOneLanguage(String name); 
+	public Language getOneLanguage(int id); 
 	public Language getById(int id);
 	public Language update(UpdateLanguageRequest updateRequest, int id);
 	public void delete(int id);

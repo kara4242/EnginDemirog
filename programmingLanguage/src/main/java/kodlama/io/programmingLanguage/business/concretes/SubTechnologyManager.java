@@ -50,7 +50,7 @@ public class SubTechnologyManager implements SubTechnologyService {
 
 	@Override
 	public void add(CreateSubTechnologyRequest subTechnologyRequest) {
-		Language language = languageService.getOneLanguage(subTechnologyRequest.getName());
+		Language language = languageService.getOneLanguage(subTechnologyRequest.getId());
 		SubTechnology subTechnology = new SubTechnology();
 	subTechnology.setLanguage(language);;
 		subTechnology.setName(subTechnologyRequest.getName());
@@ -63,7 +63,7 @@ public class SubTechnologyManager implements SubTechnologyService {
 	public void update(UpdateSubTechnolgyRequest updateRequest, int id) {
 		
 		SubTechnology subTechnology = getOneSubTechnology(id);
-		Language language = this.languageService.getOneLanguage(updateRequest.getName());
+		Language language = this.languageService.getOneLanguage(updateRequest.getId());
 		
 		subTechnology.setLanguage(language);
 		subTechnology.setName(updateRequest.getName());

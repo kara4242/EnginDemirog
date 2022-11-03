@@ -59,8 +59,8 @@ public class LanguageManager implements LanguageService {
 
 
 	@Override
-	public Language getOneLanguage(String name) {
-		return this.languageRepository.findByName(name);
+	public Language getOneLanguage(int id) {
+		return this.languageRepository.findById(id).orElse(null);
 	}
 
 
