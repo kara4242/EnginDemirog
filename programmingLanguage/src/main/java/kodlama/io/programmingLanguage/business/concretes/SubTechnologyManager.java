@@ -62,8 +62,8 @@ public class SubTechnologyManager implements SubTechnologyService {
 	@Override
 	public void update(UpdateSubTechnolgyRequest updateRequest, int id) {
 		
-		SubTechnology subTechnology = getOneSubTechnology(id);
-		Language language = this.languageService.getOneLanguage(updateRequest.getId());
+		SubTechnology subTechnology = getOneSubTechnology(updateRequest.getId());
+		Language language = this.languageService.getOneLanguage(id);
 		
 		subTechnology.setLanguage(language);
 		subTechnology.setName(updateRequest.getName());
